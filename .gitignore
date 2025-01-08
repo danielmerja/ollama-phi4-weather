@@ -1,0 +1,35 @@
+# Environment variables
+.env
+
+# Go binaries and build files
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+bin/
+
+# Go workspace files
+go.work
+go.work.sum
+
+# IDE specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS specific files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Log files
+*.log
+
+#markdown files
+*.md

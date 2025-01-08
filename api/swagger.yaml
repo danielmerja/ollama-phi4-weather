@@ -1,0 +1,69 @@
+openapi: 3.0.0
+info:
+  title: Weather CLI
+  version: 1.0.0
+  description: CLI application for getting weather information with Ollama AI-powered descriptions
+
+servers:
+  - url: http://localhost:8080
+    description: Local development server
+
+paths:
+  /weather:
+    get:
+      summary: Get weather for a location
+      parameters:
+        - in: query
+          name: q
+          required: true
+          schema:
+            type: string
+          description: Natural language query (e.g., "What's the weather like in Miami?")
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  weather:
+                    type: object
+                    properties:
+                      temperature:
+                        type: number
+                      feels_like:
+                        type: number
+                      conditions:
+                        type: string
+                      humidity:
+                        type: integer
+                      wind_speed:
+                        type: number
+                      wind_speed_unit:
+                        type: string
+                      wind_direction:
+                        type: string
+                      wind_gust:
+                        type: number
+                      visibility:
+                        type: number
+                      pressure:
+                        type: number
+                      dew_point:
+                        type: number
+                      uv_index:
+                        type: number
+                      cloud_cover:
+                        type: integer
+                      precipitation_chance:
+                        type: integer
+                      timestamp:
+                        type: string
+                  description:
+                    type: string
+                    description: AI-generated weather description
+        '400':
+          description: Bad request - missing or invalid query
+        '500':
+          description: Internal server error 

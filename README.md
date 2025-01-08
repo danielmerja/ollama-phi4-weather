@@ -26,8 +26,8 @@ A command-line interface for getting weather information with natural language p
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/weather-cli
-cd weather-cli
+git clone https://github.com/danielmerja/ollama-phi4-weather
+cd ollama-phi4-weather
 ```
 
 2. Install dependencies:

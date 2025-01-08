@@ -19,7 +19,7 @@ A command-line interface for getting weather information with natural language p
 ## Prerequisites
 
 - Go 1.21 or higher
-- [Ollama](https://ollama.ai/) installed and running
+- Latest [Ollama](https://ollama.com/) installed and running
 - The phi4 model installed in Ollama
 
 ## Installation

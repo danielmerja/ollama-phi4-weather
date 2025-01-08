@@ -21,7 +21,7 @@ func Load() (*Config, error) {
 		Port:           getEnvOrDefault("PORT", "8080"),
 		APIKey:         os.Getenv("API_KEY"),
 		OllamaURL:      getEnvOrDefault("OLLAMA_URL", "http://localhost:11434/api"),
-		OllamaModel:    getEnvOrDefault("OLLAMA_MODEL", "phi"),
+		OllamaModel:    getEnvOrDefault("OLLAMA_MODEL", "phi4"),
 		RateLimit:      rateLimit,
 		AllowedOrigins: []string{"*"}, // Configure as needed
 	}, nil

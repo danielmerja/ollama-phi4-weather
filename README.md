@@ -1,6 +1,6 @@
-# Weather CLI with Ollama AI
+# Weather CLI with Ollama & Phi-4 LLM
 
-A command-line interface for getting weather information with natural language processing powered by Ollama AI.
+A command-line interface for getting weather information with natural language processing powered by Ollama and Phi-4 LLM.
 
 ## Features
 
@@ -20,7 +20,7 @@ A command-line interface for getting weather information with natural language p
 
 - Go 1.21 or higher
 - Latest [Ollama](https://ollama.com/) installed and running
-- The phi4 model installed in Ollama
+- The phi-4 llm installed via Ollama
 
 ## Installation
 
